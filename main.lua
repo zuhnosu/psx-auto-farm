@@ -24,9 +24,7 @@ for i,v in pairs(workspace.__THINGS.Orbs:GetChildren()) do
 end 
 
 workspace.__THINGS.Orbs.ChildAdded:Connect(function(v)
-    if _G.AutoCollectOrbs then 
-        Orbs.Collect(v)
-    end 
+    Orbs.Collect(v)
 end)
 
 while true do 
