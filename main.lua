@@ -32,7 +32,7 @@ end)
 while true do 
     if _G.AutoFarm then
         local Pets = GetPets()
-        local Coins = GetCoins('Town')
+        local Coins = GetCoins(_G.Area or 'Town')
         for i,v in next, Coins do
             if workspace.__THINGS.Coins:FindFirstChild(i) and _G.AutoFarm then 
                 for _,Pet in next, Pets do 
